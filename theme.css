@@ -1,0 +1,16 @@
+/* Custom Home Icon */
+.guilds .guild:first-child .guild-inner {
+  background: url("YOUR_IMAGE_URL") no-repeat center/cover !important;
+  border-radius: 50% !important;
+  width: 48px !important;
+  height: 48px !important;
+  margin: auto !important;
+}
+
+.guilds .guild:first-child .guild-inner:before {
+  content: '' !important;
+}
+
+.guilds .guild:first-child .guild-icon {
+  display: none !important; /* Hides default home icon */
+}
