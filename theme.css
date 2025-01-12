@@ -1,16 +1,57 @@
+/* AMOLED Black Theme with Custom Home Icon */
+
+/* Base Colors */
+:root {
+  --background-primary: #000000 !important;
+  --background-secondary: #000000 !important;
+  --background-tertiary: #000000 !important;
+  --background-accent: #000000 !important;
+  --background-floating: #000000 !important;
+  --background-modifier-hover: #000000 !important;
+  --background-modifier-selected: #000000 !important;
+  --background-modifier-active: #000000 !important;
+  --scrollbar-auto-thumb: #333333 !important;
+  --scrollbar-auto-track: #000000 !important;
+  --text-normal: #ffffff !important;
+  --text-muted: #b9bbbe !important;
+  --text-link: #7289da !important;
+  --home-icon-image: url("YOUR_IMAGE_URL"); /* Replace with your custom home icon URL */
+}
+
 /* Custom Home Icon */
-.guilds .guild:first-child .guild-inner {
-  background: url("https://i.postimg.cc/FFwXnRKD/28f3b212c555d56a5c863a1f9d38838c.jpg") no-repeat center/cover !important;
+.guildsWrapper-5TJh6A > div:first-child [class*="guild-"] {
+  background: var(--home-icon-image) no-repeat center/cover !important;
   border-radius: 50% !important;
   width: 48px !important;
   height: 48px !important;
   margin: auto !important;
 }
 
-.guilds .guild:first-child .guild-inner:before {
+.guildsWrapper-5TJh6A > div:first-child [class*="guild-"]::before {
   content: '' !important;
 }
 
-.guilds .guild:first-child .guild-icon {
-  display: none !important; /* Hides default home icon */
+.guildsWrapper-5TJh6A > div:first-child [class*="guild-"] .icon-2xnN2Y {
+  display: none !important; /* Hides the default home icon */
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  background-color: #000000 !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333333 !important;
+}
+
+/* Chat Background */
+.chat-3bRxxu {
+  background-color: #000000 !important;
+}
+
+/* Message Input */
+.textArea-2Spzkt {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 1px solid #333333 !important;
 }
